@@ -103,6 +103,112 @@ console.log(obj2.edad);
 const { edad } = listaObjetos.find(o => o.nombre === "Belen");
 console.log(edad)
 
+// metodos avanzados map, filter, reduce
+const ciudades = ["Rosario", "Roldan", "Carcaraña", "Rojas", "Fuentes"];
+
+// a tener en cuenta, el forEach no devueve nada
+const val = ciudades.forEach(v=>{console.log(v)});
+console.log(val);
+
+// map  nos da un nuevo array modificado
+const conMap = ciudades.map((val, indice) =>`${indice +1} - ${val} `)
+console.log(conMap);
+
+console.log(listaObjetos);
+// const mayorDeEdad = listaObjetos.filter(obj => {
+//   if (obj.edad > 18){
+//     return true
+//   } else {
+//     return false
+//   }
+// })
+const mayorDeEdad = listaObjetos.filter(obj => obj.edad > 18); 
+console.log(mayorDeEdad);
+const nuevaLista = listaObjetos.filter(obj => obj.nombre !== "Gianni");
+console.log(nuevaLista);
+
+const valores = [3, 56, 23, 5, 90, 100];
+const sumaVal = valores.reduce((acumulado, actual, indice, original)=>{
+  console.log(acumulado)
+  console.log(actual)
+  console.log(indice)
+  console.log(original)
+  return acumulado + actual
+});
+console.log(sumaVal);
 
 
 
+// ordenar y comparacion de arrays
+// sort()
+const arrayNumeros = [2,5,9,15,1,2,0,4];
+console.log(arrayNumeros);
+arrayNumeros.sort((a,b)=>{
+  if (a<b){
+    return +1
+  }else if(a>b){
+    return -1
+  }else {
+    return 0
+  }
+})
+console.log(arrayNumeros)
+
+const ordenar = [4,5,3,10,0,34,2,6,35,57,23,90];
+ordenar.sort((a,b)=> a - b)
+console.log(ordenar);
+
+// con objetos
+console.log(listaObjetos)
+listaObjetos.sort((a,b) =>{
+  if(a.edad < b.edad){
+    return -1
+  }else if (a.edad > b.edad){
+    return +1
+  } else{
+    return 0
+  }
+});
+console.log(listaObjetos)
+
+
+// comparar con every()
+
+const comparo1 = [4,5,6,7,8,-1,-2,-3];
+const resultado = comparo1.every(val => val > 0 )
+console.log(resultado);
+
+const arr1 = [1,2,3,4];
+const arr2 = [1,2,3,4];
+console.log(arr1 === arr1);
+console.log(arr1 === arr2);
+const comparar = (array1, array2) =>{
+  if(array1.length !== array2.length) return false
+  const res = array1.every((val, i)=>val === array2[i])
+  return res
+}
+
+console.log(comparar(arr1,arr2));
+
+const algunos = [3,7,2,4,9,42,7834,23,-6];
+const res = algunos.some(valor => valor < 0);
+console.log(res);
+
+const existe = algunos.some( valor => valor === 90)
+console.log(existe);
+
+const existePersona = listaObjetos.some(pers => pers.nombre === "Gianni")
+console.log(existePersona)
+
+
+// como obtner una lista a partir de un objeto iterable 
+const objIterable = "Hola soy Gianni";
+console.log(objIterable[9]);
+
+const fromArr = Array.from(objIterable);
+console.log(fromArr);
+
+const keys = comparo1.keys();
+console.log(keys);
+const arrKeys = Array.from(keys);
+console.log(arrKeys);
