@@ -74,3 +74,33 @@ const listaPeliculas = [
 ];
 console.log(listaPeliculas);
 
+listaPeliculas.sort((a,b) => a.fecha - b.fecha)
+console.log(listaPeliculas);
+
+
+// ************************************************************
+// FECHAS
+const fecha = new Date()
+console.log(fecha)
+
+const fecha2 = new Date(1982,5,45, 23,23,45);
+console.log(fecha2);
+
+const fecha3 = new Date(1000000000000)
+console.log(fecha3);
+
+const fecha4 = new Date("october 13, 1979 12:15:14")
+console.log(fecha4);
+
+console.log(fecha2.getTime() === fecha4.getTime());
+
+console.log(fecha2.getDate());
+console.log(fecha2.getMonth() + 1);
+console.log(fecha2.getFullYear());
+
+console.log(fecha2);
+
+console.log(fecha2.toLocaleDateString("en-US"));
+console.log(fecha2.toLocaleDateString("en-GB"));
+
+
