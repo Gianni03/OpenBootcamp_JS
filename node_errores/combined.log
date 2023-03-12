@@ -1,0 +1,37 @@
+{"level":"info","message":"mensaje informativo","service":"user-service"}
+{"level":"warn","message":"mensaje de advertencia","service":"user-service"}
+{"level":"error","message":"mensaje de error","service":"user-service"}
+{"level":"info","message":"mensaje informativo","service":"user-service"}
+{"level":"warn","message":"mensaje de advertencia","service":"user-service"}
+{"level":"error","message":"mensaje de error","service":"user-service"}
+{"level":"info","message":"mensaje informativo","service":"user-service"}
+{"level":"warn","message":"mensaje de advertencia","service":"user-service"}
+{"level":"error","message":"mensaje de error","service":"user-service"}
+{"level":"info","message":"mensaje informativo","service":"user-service"}
+{"level":"warn","message":"mensaje de advertencia","service":"user-service"}
+{"level":"error","message":"mensaje de error","service":"user-service"}
+{"level":"info","message":"mensaje informativo","service":"user-service"}
+{"level":"warn","message":"mensaje de advertencia","service":"user-service"}
+{"level":"error","message":"mensaje de error","service":"user-service"}
+{"level":"info","message":"esta ejecutandose correctamente","service":"user-service"}
+{"level":"info","message":3025,"service":"user-service"}
+{"level":"info","message":"Esto se ejecuta siempre","service":"user-service"}
+{"level":"info","message":"mensaje informativo","service":"user-service"}
+{"level":"warn","message":"mensaje de advertencia","service":"user-service"}
+{"level":"error","message":"mensaje de error","service":"user-service"}
+{"level":"info","message":"esta ejecutandose correctamente","service":"user-service"}
+{"level":"info","service":"user-service"}
+{"level":"info","message":"Esto se ejecuta siempre","service":"user-service"}
+{"level":"info","message":"mensaje informativo","service":"user-service"}
+{"level":"warn","message":"mensaje de advertencia","service":"user-service"}
+{"level":"error","message":"mensaje de error","service":"user-service"}
+{"level":"info","message":"esta ejecutandose correctamente","service":"user-service"}
+{"level":"info","service":"user-service"}
+{"level":"info","message":"Esto se ejecuta siempre","service":"user-service"}
+{"level":"info","message":"mensaje informativo","service":"user-service"}
+{"level":"warn","message":"mensaje de advertencia","service":"user-service"}
+{"level":"error","message":"mensaje de error","service":"user-service"}
+{"level":"info","message":"esta ejecutandose correctamente","service":"user-service"}
+{"level":"warn","message":"no es correcto!!!ERROR Debe ingresar un numero","service":"user-service"}
+{"level":"info","service":"user-service"}
+{"level":"info","message":"Esto se ejecuta siempre","service":"user-service"}
