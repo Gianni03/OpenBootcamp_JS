@@ -7,3 +7,20 @@ console.log(array2);
 const dobleDelValor = valor => {
   valor * 2
 }
+
+// carga y sobrecarga de funciones
+
+function saludar(){
+  hola()
+}
+function hola(){
+  console.log("soy la funcion hola")
+}
+
+saludar()
+
+
+function recursiva(){
+  recursiva()
+}
+// esto genera una sobrecarga - stackOverflow
